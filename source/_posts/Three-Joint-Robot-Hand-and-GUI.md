@@ -12,9 +12,9 @@ This three joint robotic hand(DMT_Hand) was designed to pick up heavy staff and 
 
 I use ROS(robotic operating system) and python to develop a full custom robot control script and graphic user interface based on open source APIs provided by Dynamixel servo.
 
-My controller is capable in torque, speed, position control and can pefrom any user defined motion profile. All function as well as pressure sensor feedback data can be accessed through the GUI.
+My controller is capable in torque, speed, position control and can pefrom any user defined motion profile. All functions and pressure sensor readings can be accessed through the GUI.
 
-A human-robot interferance glove enables the hand to imitate human's motion simutaneously.
+A human-robot interaction glove enables the robot hand to imitate human's motion simutaneously.
 
 ------
 Check more about this project:

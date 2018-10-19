@@ -10,6 +10,8 @@ visible:
 
 ![](/uploads/asp.PNG)
 
+<!-- <img src="asp.PNG" width="300" hegiht="90" align=center/> -->
+
 This courswork covers fundamentals of statistical signal processing, with particular emphasis upon classical and modern estimation theory, parametric and nonparametric modelling, time series analysis, least squares methods, and basics of adaptive signal processing. 
 
 ### Sevel examples from the coursework are given below:

@@ -3,7 +3,6 @@ title: Three Joint Robot Hand and GUI
 date: 2018-07-04 23:38:12
 tags:
 categories: Portfolio
-visible: hide
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tklL4wqzF8Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

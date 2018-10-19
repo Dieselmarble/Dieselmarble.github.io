@@ -3,9 +3,10 @@ title: EEBug
 date: 2018-07-01 00:39:37
 tags:
 categories: Portfolio
-visible: hide
+visible: 
 ---
-![img](EEBug.jpeg)
+
+![](/uploads/EEBug.jpeg)
 
 <!-- <img src="EEBug.jpeg" width="300" hegiht="90" align=center/> -->
 

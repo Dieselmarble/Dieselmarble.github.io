@@ -79,13 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhongxuan Li">
-<meta property="og:url" content="http://yoursite.com/archives/2018/09/index.html">
+<meta name="description" content="I just realised that PCA has somewhat of relationship to signal sparsity. In PCA, we calculate the eigen-space based on eigenvalue decomposition of data covariance matrix  $$ S = AA^T $$  where $ A =">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PCA and signal sparsity">
+<meta property="og:url" content="http://yoursite.com/2018/10/31/PCA-and-signal-sparsity/index.html">
 <meta property="og:site_name" content="Zhongxuan Li">
+<meta property="og:description" content="I just realised that PCA has somewhat of relationship to signal sparsity. In PCA, we calculate the eigen-space based on eigenvalue decomposition of data covariance matrix  $$ S = AA^T $$  where $ A =">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/uploads/egval.png">
+<meta property="og:updated_time" content="2018-10-31T20:58:21.165Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhongxuan Li">
+<meta name="twitter:title" content="PCA and signal sparsity">
+<meta name="twitter:description" content="I just realised that PCA has somewhat of relationship to signal sparsity. In PCA, we calculate the eigen-space based on eigenvalue decomposition of data covariance matrix  $$ S = AA^T $$  where $ A =">
+<meta name="twitter:image" content="http://yoursite.com/uploads/egval.png">
 
 
 
@@ -115,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/09/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/31/PCA-and-signal-sparsity/"/>
 
 
 
 
 
-  <title>Archive | Zhongxuan Li</title>
+  <title>PCA and signal sparsity | Zhongxuan Li</title>
   
 
 
@@ -140,7 +146,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,74 +250,170 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 10 posts in total. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/PCA-and-signal-sparsity/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhongxuan Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/myphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhongxuan Li">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/05/Three-phase brushless-linear motor-with-trapezoidal-control/" itemprop="url">
-              
-                <span itemprop="name">The 3 Phase Brushless Linear Motor With Trapezoidal Control</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">PCA and signal sparsity</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-05T00:04:31Z"
-              content="2018-09-05" >
-          09-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-31T20:44:13+00:00">
+                2018-10-31
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>I just realised that PCA has somewhat of relationship to signal sparsity.</p>
+<p>In PCA, we calculate the eigen-space based on eigenvalue decomposition of data covariance matrix </p>
+<p>$$ S = AA^T $$ </p>
+<p>where $ A = (x - x)(x - x)^T $</p>
+<p>This equivalent(similar, strictly speaking) to performing SVD on A.</p>
+<p>In SVD, we can get rid of small singular values due to signal sparsity.</p>
+<p>Hence we can truncate the eigen values in PCA.</p>
+<p><img src="/uploads/egval.png" alt="image.png"></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/31/Connect-to-my-AWS-EC2-Instance/" rel="next" title="Connect to my AWS EC2-Instance">
+                <i class="fa fa-chevron-left"></i> Connect to my AWS EC2-Instance
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -319,6 +421,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -557,6 +663,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

@@ -3,14 +3,12 @@ title: 'Selected Topics in Statistical Signal Processing '
 date: 2018-10-11 22:11:26
 tags:
 categories: Portfolio
-visible: hide
+visible: 
 ---
 
 ### Overview
 
-![](/uploads/asp.PNG)
-
-<!-- <img src="asp.PNG" width="300" hegiht="90" align=center/> -->
+![img](/uploads/asp.png)
 
 This courswork covers fundamentals of statistical signal processing, with particular emphasis upon classical and modern estimation theory, parametric and nonparametric modelling, time series analysis, least squares methods, and basics of adaptive signal processing. 
 

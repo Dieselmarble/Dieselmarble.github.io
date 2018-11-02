@@ -7,7 +7,7 @@ visible:
 ---
 ### The outlook of my linear motor
 
-![](/uploads/motor.JPG)
+![](/uploads/motor.jpg)
 
 <!-- <img src="motor.jpg" width="300" hegiht="90" align=center/> -->
 

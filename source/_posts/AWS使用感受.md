@@ -8,6 +8,8 @@ visible:
 
 ## 链接 AWS EC2 虚拟机
 
+今天申请了一个amzon aws学生账号，可以免费使用低配云端服务器。把一些有用的command附在下面：
+
 - Use the following command to set the permissions of your private key file so that only you can read it.
 
 > chmod 400 /path/my-key-pair.pem
@@ -17,3 +19,6 @@ visible:
 > ssh -i /path/my-key-pair.pem [ec2-user@ec2-198-51-100-1.compute-1.amazonaws.com](mailto:ec2-user@ec2-198-51-100-1.compute-1.amazonaws.com)
 
 - Replace EC2 with Ubuntu if using an ubuntu virtual machine
+
+在EC2云端开启Jupyter notebook:
+

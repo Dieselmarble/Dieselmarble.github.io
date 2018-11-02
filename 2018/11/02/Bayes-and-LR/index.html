@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="An idea popped up in my mind about the relationship between Logistic Regression and Bayes’ theorem. ## 1. Bayes’ theorem - Statement of theorem (from Wikipedia):    ![{\displaystyle P(A\mid B)={\frac">
+<meta name="description" content="An idea popped up in my mind about the relationship between Logistic Regression and Bayes’ theorem. 1. Bayes’ theorem Statement of theorem (from Wikipedia):     $$ ![{\displaystyle P(A\mid B)={\frac {">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bayes and LR">
 <meta property="og:url" content="http://yoursite.com/2018/11/02/Bayes-and-LR/index.html">
 <meta property="og:site_name" content="Zhongxuan Li">
-<meta property="og:description" content="An idea popped up in my mind about the relationship between Logistic Regression and Bayes’ theorem. ## 1. Bayes’ theorem - Statement of theorem (from Wikipedia):    ![{\displaystyle P(A\mid B)={\frac">
+<meta property="og:description" content="An idea popped up in my mind about the relationship between Logistic Regression and Bayes’ theorem. 1. Bayes’ theorem Statement of theorem (from Wikipedia):     $$ ![{\displaystyle P(A\mid B)={\frac {">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/uploads/bayes.png">
-<meta property="og:updated_time" content="2018-11-02T15:46:07.322Z">
+<meta property="og:updated_time" content="2018-11-02T15:49:29.821Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bayes and LR">
-<meta name="twitter:description" content="An idea popped up in my mind about the relationship between Logistic Regression and Bayes’ theorem. ## 1. Bayes’ theorem - Statement of theorem (from Wikipedia):    ![{\displaystyle P(A\mid B)={\frac">
+<meta name="twitter:description" content="An idea popped up in my mind about the relationship between Logistic Regression and Bayes’ theorem. 1. Bayes’ theorem Statement of theorem (from Wikipedia):     $$ ![{\displaystyle P(A\mid B)={\frac {">
 <meta name="twitter:image" content="http://yoursite.com/uploads/bayes.png">
 
 
@@ -293,7 +293,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-02T15:40:42Z">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-02T15:40:42+00:00">
                 2018-11-02
               </time>
             
@@ -354,19 +354,18 @@
 
       
         <p>An idea popped up in my mind about the relationship between Logistic Regression and Bayes’ theorem.</p>
-<p>## 1. Bayes’ theorem</p>
-<p>- Statement of theorem (from Wikipedia):</p>
+<h2 id="1-Bayes’-theorem"><a href="#1-Bayes’-theorem" class="headerlink" title="1. Bayes’ theorem"></a>1. Bayes’ theorem</h2><ul>
+<li>Statement of theorem (from Wikipedia):</li>
+</ul>
 <p><img src="/uploads/bayes.png" alt=""></p>
 <!-- <img src="bayes.png" width="300" hegiht="90" align=center/> -->
-<p> ![{\displaystyle P(A\mid B)={\frac {P(B\mid A)\,P(A)}{P(B)}}\cdot }]</p>
+<p> $$ ![{\displaystyle P(A\mid B)={\frac {P(B\mid A)\,P(A)}{P(B)}}\cdot }] $$</p>
 <p>Bayes’s theorem solve a specific class of problem called   </p>
 <p><a href="https://en.wikipedia.org/wiki/Probability_distribution" target="_blank" rel="noopener">Inverse probability</a></p>
-<p>### 更加简单地理解贝叶斯公式</p>
-<p>我们蒙着眼睛，伸手从箱子取球：由于球的大小形状和数量都一样，所以我们认为取的球来自A箱和B箱的概率都是1/2。</p>
+<h3 id="更加简单地理解贝叶斯公式"><a href="#更加简单地理解贝叶斯公式" class="headerlink" title="更加简单地理解贝叶斯公式"></a>更加简单地理解贝叶斯公式</h3><p>我们蒙着眼睛，伸手从箱子取球：由于球的大小形状和数量都一样，所以我们认为取的球来自A箱和B箱的概率都是1/2。</p>
 <p>但是我摸出来以后，我瞄了一眼，发现：这是白球。然后我就断定：这个球一定来自A箱子。</p>
 <p>摸出来的球来自A箱的概率由1/2变成了1。这是为什么呢？就是因为有后验概率是不一样的，摸出来球的颜色会对一开始的概率产生影响。</p>
-<p>## 2. Logistic regression</p>
-
+<h2 id="2-Logistic-regression"><a href="#2-Logistic-regression" class="headerlink" title="2. Logistic regression"></a>2. Logistic regression</h2>
       
     </div>
     
@@ -454,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -532,6 +540,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Bayes’-theorem"><span class="nav-number">1.</span> <span class="nav-text">1. Bayes’ theorem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更加简单地理解贝叶斯公式"><span class="nav-number">1.1.</span> <span class="nav-text">更加简单地理解贝叶斯公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Logistic-regression"><span class="nav-number">2.</span> <span class="nav-text">2. Logistic regression</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

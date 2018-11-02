@@ -443,7 +443,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/02/Bayes-and-LR/" itemprop="url">Bayes and LR</a></h1>
+                <a class="post-title-link" href="/2018/11/02/Bayes-and-LR/" itemprop="url">贝叶斯和逻辑回归的异同分析</a></h1>
         
 
         <div class="post-meta">
@@ -542,6 +542,7 @@
 <p>$$ P(Y = y_k|X_1 …X_n) = P(Y = y_k)P(X_1 …X_n|Y = y_k) = \sum_j P(Y = y_j)P(X_1 …X_n|Y = y_j)$$</p>
 <p>我们寻找的是概率最大的$y_k$ 因此可以用</p>
 <p>$$ Y ← argmax y_k P(Y = y_k)\prod_{i}  P(X_i |Y = y_k) $$</p>
+<p>为什么去掉了贝叶斯公式中分母？因为后验概率中分母是确定的！</p>
 <p>补充一个有趣的公式：</p>
 <p>$$ P(C_i|A,B) = \frac{P(C_i,B|A)}{\sum_i P(C_i, B|A)} $$</p>
 <h3 id="更加简单地理解贝叶斯公式"><a href="#更加简单地理解贝叶斯公式" class="headerlink" title="更加简单地理解贝叶斯公式"></a>更加简单地理解贝叶斯公式</h3><p>我们蒙着眼睛，伸手从箱子取球：由于球的大小形状和数量都一样，所以我们认为取的球来自A箱和B箱的概率都是1/2。</p>
@@ -563,8 +564,8 @@
 <p>对odds取对数函数：</p>
 <p>$$ ln(\frac{P}{1-P}) = \theta^T x $$</p>
 <p>那么那么如何求出分类器的参数$\theta$呢。</p>
-<p>对于 projection matrix $\theta$ 的求解，我们用到了最大拟似然估计（MLE）</p>
-<p>$$ L(\theta) = \prod_{i=1}^{m} h_\theta (x_i) )^y_i (1- h_\theta (x_i)^{1-y_i} $$</p>
+<p>对于 projection matrix $\theta$ 的求解，我们用到了最大拟然估计（MLE）就是利用已知的样本结果信息，反推最具有可能（最大概率）导致这些样本结果出现的模型参数值。</p>
+<p>$$ L(\theta) = \prod_{i=1}^{m} h_\theta (x_i) )^{y_i} (1- h_\theta (x_i)^{1-y_i} $$</p>
 <p>assuming are observations are independent</p>
 <h3 id="两者的内在联系"><a href="#两者的内在联系" class="headerlink" title="两者的内在联系"></a>两者的内在联系</h3><p>那么贝叶斯和逻辑回归有着什么样的内在联系呢？</p>
 <blockquote>
@@ -585,6 +586,7 @@
 <li>GNB and Logistic Regression converge toward their asymptotic accuracies at different rates. As Ng &amp; Jordan (2002) show, GNB parameter estimates converge toward their asymptotic values in order logn examples, where n is the dimension of X. In contrast, Logistic Regression parameter estimates converge more slowly, requiring order n examples. The authors also show that in several data sets Logistic Regression outperforms GNB when many training examples are available, but GNB outperforms Logistic Regression when training data is scarce.</li>
 <li>Naive Bayes is a learning algorithm with greater bias, but lower variance, than Logistic Regression. If this bias is appropriate given the actual data, Naive Bayes will be preferred. Otherwise, Logistic Regression will be preferred.</li>
 </ul>
+<h3 id="有用的补充"><a href="#有用的补充" class="headerlink" title="有用的补充"></a>有用的补充</h3><p><a href="https://zhuanlan.zhihu.com/p/26614750" target="_blank" rel="noopener">最大拟然估计</a></p>
 
           
         

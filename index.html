@@ -216,16 +216,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -245,6 +235,230 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+        
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/06/21/Brief-Description of-the-Huawei-ODN-Planning-Problem/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhongxuan Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/myphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhongxuan Li">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/06/21/Brief-Description of-the-Huawei-ODN-Planning-Problem/" itemprop="url">Brief Description of the Huawei ODN Planning Problem</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-21T00:00:55Z">
+                2021-06-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Portfolio/" itemprop="url" rel="index">
+                    <span itemprop="name">Portfolio</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/06/21/Brief-Description of-the-Huawei-ODN-Planning-Problem/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/06/21/Brief-Description of-the-Huawei-ODN-Planning-Problem/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>Brief Description of the Huawei ODN planning Problem</strong></p>
+<p> <img src="/uploads/ODN-net.png" alt=""></p>
+<!-- <img src="ODN-net.png" width="300" hegiht="90" align=center/> -->
+<p><strong>ODN Drop Optical Cables (Layer one) Problem</strong></p>
+<p>ODN drop optical problem is often modelled as a Single Source Capacitated Facility Location Problem, where each FAT (Fiber Access Terminal) is equivalent to a facility. Users are connected to FAT in a star topology.</p>
+<p>A conventional SSCFL formulation is as follows,</p>
+<p><img src="/uploads/SSCFL.png" alt="img"></p>
+<!-- <img src="SSCFL.png" width="300" hegiht="90" align=center/> -->
+<p><img src="/uploads/FAT-problem.png" alt="img"></p>
+<!-- <img src="FAT-problem.png" width="300" hegiht="90" align=center/> --> 
+<p>Furthermore, we modified the problem to an “intersection free” mood. Because the possible arcs set A is obtained by Dijkstra’s algorithm, we could therefore know which two possible arcs have common nodes, shared line segments, or continuous plane. These are known as point, line, and plane intersections.</p>
+<p>The following two charts are examples of “plane” intersection:</p>
+<p><img src="/uploads/intersection.png" alt="img"></p>
+<!-- <img src="intersection.png" width="300" hegiht="90" align=center/> --> 
+<p>Proving we have acquired the intersection relationship between any two possible arcs. We can add logical OR constraints to those two arcs, such that<br>$$<br>y_1 + y_2 \leq 1<br>$$</p>
+<p>In order to give a speedup to the model, we adopt a sequential graph partition framework, which applies the famous multilevel graph partition algorithm (written in the METIS software). For each iteration, we only solves a part of the complete roadmap, until all users have been connected.</p>
+<p><img src="/uploads/metis-1.png" alt="img"></p>
+<p>In addition, a network-flow based model has been proposed to solve the “point intersection” SSCFL problem. The model is described as follows,</p>
+<p><img src="/uploads/SSCFL-point-intersection.png" alt="img"></p>
+<p>The drawback of this model is: it does not include distance constraints. Even though we can add on distance constraints by MTZ constraints ( Miller, C. E.; Tucker, E. W.; Zemlin, R. A. (1960). “Integer Programming Formulations and Travelling Salesman Problems”. J. ACM. <strong>7</strong>: 326–329. doi). But the model would become slow. Furthermore, on complex roadmap, this “flow model” takes a lot of time to reach relative optimal gap (in branch and bound).</p>
+<p><strong>Objectives:</strong> </p>
+<p>Problem size of Layer one ranges from 500 users to 5000 users, whereas the roadmap can have up to 20,000 edges and 9,000 nodes. Of course, the possible arcs obtained by Dijkstra’s algorithm have an even larger scale.</p>
+<p>Variables and constraints:</p>
+<p>FAT location are to be solved;</p>
+<p>Users’ location and number are pre-defined;</p>
+<p>Maximum cable length constraints must be met;</p>
+<p>Capacity of the hub box must be met;</p>
+<p>Problem scale: 500-5000 users to be connected</p>
+<p>We aim to minimize the number of FATs used (primary goal), and the total routing distance (second goal), with intersection free, and under distance, capacity constraints.</p>
+<p>Speed of the algorithm is also a very important factor taken into consideration. </p>
+<p><strong>Ways to improve:</strong></p>
+<ol>
+<li><p>Better (Lean) model of formulations</p>
+</li>
+<li><p>Reduce the number of “intersection” constraints</p>
+</li>
+<li><p>A better graph partition method, other than METIS</p>
+</li>
+<li><p>Better post-processing methods, merging two under-volume clusters, e.g. merge three clusters into two, five into four, etc. Very similar to Jewel of Atlantis.</p>
+</li>
+</ol>
+<p><strong>ODN Pre-Connection (Layer two) Problem</strong></p>
+<p><img src="/uploads/FAT-box.png" alt="img"></p>
+<p>The pre-connection problem targets at FDT -&gt; FAT of an ODN network. Conventionally, 4 FATs are connected in a chain manner, whereas 4 chains are joint together (at a starting node, FDT), forming a complete pre-connection topology.</p>
+<p> The picture below illustrates what is a pre-connection topology, where 4 chains are jointly connected at the FDT depot (green node).</p>
+<p><img src="/uploads/FDT-topology.png" alt="img"> </p>
+<p>The layer two problem is very similar to The Multiple Depot, Multiple Traveling Salesmen Facility-Location Problem. (The Multiple Depot, Multiple Traveling Salesmen Facility-Location Problem: Vehicle Range, Service Frequency, and Heuristic Implementations - YuPo CHAN)</p>
+<p>One of the modelling technique is to mimic the problem as a MDMTSFLP. Given the very large problem scale, this approach is considered to be time consuming. In addition, chains belongs to different FDTs must not intersect. </p>
+<p>Hence, we applied a two-stage manner approach. Using a similar flow model as in the layer one task, the roadmap is first split into several node-disjoint trees. Then we solve the routing problem inside each tree by the capacitated vehicle routing model (CVRP).</p>
+<p>The chart below illustrates the preliminary result after the splitting stage, after which CVRP is applied on each depots, inside on selected tree (in red).</p>
+<p><img src="/uploads/FDT-connection.png" alt="img"> </p>
+<p>Furthermore, we care of route repetition rate, which is the duplicate routes/total routing distance traversed by distinct chains origins from FDT. </p>
+<p>Variables and constraints:</p>
+<p>FDT location are to be solved;</p>
+<p>FAT numbers/locations are pre-defined;</p>
+<p>Maximum cable length constraints must be met;</p>
+<p>Capacity of the hub box must be met;</p>
+<p>Problem scale: 30 – 300 FAT to be connected</p>
+<p>We aim to minimize both FDT number and total routing distance with an emphasis on FDT number.</p>
+<p>Time performance is notably important.</p>
+<p><strong>Ways to improve:</strong></p>
+<ol>
+<li><p>A fast, effective heuristic methods in replacement of the current integer programming model. Capacitated minimum spanning tree sounds promising, but we cares more about reducing the number of FDT, not total distance. Therefore, trees are intrinsically minimum.</p>
+</li>
+<li><p>Solve the whole pre-connection problem as one “Location Routing Problem”, rather than two stages.</p>
+</li>
+</ol>
+<p><strong>Computing platform and time:</strong> </p>
+<p>The current algorithm runs on laptops, normally Intel i9 with 32G of RAM</p>
+<p>Time Limit: The current algorithm solves 5000 demand users within 10mins.</p>
+<p>For longer term research purpose, the algorithm may be migrated to a server (Intel Xeon, 128GB) .Time performance should be less than 10 minutes.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+      
     
       
         
@@ -787,8 +1001,6 @@
   </article>
 
 
-      
-    
       
     
       
@@ -1827,7 +2039,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 
               </div>

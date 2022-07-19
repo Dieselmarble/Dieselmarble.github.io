@@ -134,50 +134,89 @@
               <a href="https://github.com/Dieselmarble/SmartMate">code</a> 
               <p></p>
               <p>This is a side project aims to approaching camera-based real-world navigation using object recognition. 
-                A floor detection neutal network is used to extract the planar walkable region from a monocular camera after which a occupancy grid
-                map is generated, a path planning, trajectory interpolation and LQR control algorithm is applied with visual feedback.
+                A floor detection neural network is used to extract the planar walkable region from a monocular camera after which a occupancy grid
+                map is generated. Path planning, trajectory interpolation and LQR control are applied under visual feedback.
               </p>
             </td>
           </tr> 
 
-    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/odn.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/fiber2.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function refnerf_start() {
-            document.getElementById('refnerf_image').style.opacity = "1";
-          }
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='PON'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/PON.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/PON_frame.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfsuper_start() {
+                  document.getElementById('PON').style.opacity = "1";
+                }
 
-          function refnerf_stop() {
-            document.getElementById('refnerf_image').style.opacity = "0";
-          }
-          refnerf_stop()
-        </script>
-      </td>
+                function nerfsuper_stop() {
+                  document.getElementById('PON').style.opacity = "0";
+                }
+                nerfsuper_stop()
+              </script>
+            </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://www.huawei.com/ch-en/news/2019/3/huawei-releases-quickodn-solution">
-            <papertitle>SmartODN: FTTX Network Optimisation Tool for Huawei QuickODN Solutions.</papertitle>
-          </a>
-          <br>
-            <em>Huawei</em>, 2020 &nbsp
-          <br>
-          <a href="data/ODN-MOTOR2020.pdf">poster1</a>/
-          <a href="data/Wshop2020.pdf">poster2</a>
-          <p></p>
-          <p>This is a operations research project. SmartODN is a network optimisation tool that accurate plan & design both HLT and LLT of access network(the part that at 
-            terminus of optical network), enables low cost of construction, faster time to market, and higher efficiency for optical
-            distribution network (ODN) and outside plant (OSP). I devised a fusioned algorithm that combined heuristics, linear 
-            programming(Branch-and-Cut) and graph partitioning to achieve higher time and optimality performance compared to rivals 
-            (e.g. Biarri Networks), without using any commercial mixed-integer program solver, due to U.S. sanctions on Huawei. 
-            </p>
-        </td>
-      </tr>
+							<a href="https://">
+                <papertitle>OptixBus: Ultra-low Latency Industrial PON(Passive Optical Network)</papertitle>
+              </a>
+              <br>
+              <em>Huawei</em>, 2021 &nbsp 
+              <br>
+							<a href="https://">white paper</a>
+              <p></p>
+              <p>This research project targets at improving the existing PON in order to meet field-level industrial bus-line performance.
+                Because PON has TDMA mechanism in upstream direction, hence cannot meet determined latency level for industrial applications. 
+                We implemented L2 link-layer innovations including multi-burst frame structure, FBA(fixed bandwidth allocation) and burst overhead(guard time & preamble) compression 
+                to reduce the upstream latency. As for downstream, we introduce WDM(wavelength division multiplexing) to further enhence time determinacy. 
+                Apart from research work, I delegate Huawei at CCSA(Chinese standardization organization), collaborated with CAICT(China Academy of Information 
+                and Communications Technology), writing a national standardization 
+                white paper to be published in late 2022. </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/odn.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/fiber2.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function refnerf_start() {
+                  document.getElementById('refnerf_image').style.opacity = "1";
+                }
+
+                function refnerf_stop() {
+                  document.getElementById('refnerf_image').style.opacity = "0";
+                }
+                refnerf_stop()
+              </script>
+            </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.huawei.com/ch-en/news/2019/3/huawei-releases-quickodn-solution">
+                  <papertitle>SmartODN: FTTX Network Optimisation Tool for Huawei QuickODN Solutions.</papertitle>
+                </a>
+                <br>
+                  <em>Huawei</em>, 2020 &nbsp
+                <br>
+                <a href="data/ODN-MOTOR2020.pdf">poster1</a>/
+                <a href="data/Wshop2020.pdf">poster2</a>
+                <p></p>
+                <p>This is a operations research project. SmartODN is a network optimisation tool that accurately plan & design both HLT and LLT
+                  of access network(the part that at terminus of optical network), enables low cost of construction, faster time to market, and higher 
+                  efficiency for optical distribution network (ODN) and outside plant (OSP). I devised a fusioned algorithm that combined heuristics, linear 
+                  programming(Branch-and-Cut) and multilevel graph partitioning to achieve better time and optimality compared to rivals 
+                  (e.g. Biarri Networks), without using any commercial mixed-integer program solver, due to U.S. sanctions on Huawei. 
+                  </p>
+              </td>
+            </tr>
 
           <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -208,19 +247,19 @@
               <!-- <font color="red"><strong>(Oral Presentation)</strong></font> -->
               <br>
               <a href="data/linear_motor.pdf">poster</a>
-        /
+              /
               <a href="https://www.youtube.com/watch?v=-ydjvoFRvgY">video</a>
               <p></p>
               <p>
                 This novel linear motor prototype is one of the projects during my placement at Ocado Technolgy. I designed and developed this linear PMSM 
                 (permanent magnetic synchronous motor) independently, from mechanical design, finite element analysis, to embedded C programming. 
-                A STM32 microcontroller and six step inverter is used to perform field-oriented control of this BLDC inherented linear motor. A novelty designed
-                PCB rotor is proposed, with printed windings providing maximum of 10N force.
+                A STM32 microcontroller and six step inverter is used to perform FOC(field-oriented control) of this BLDC inherented linear motor. A novelty designed
+                PCB rotor is proposed, with printed windings providing a maximum of 10N force.
               </p>
             </td>
           </tr> 
 
-                    <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='domestic_robot_image'><video  width=100% height=100% muted autoplay loop>

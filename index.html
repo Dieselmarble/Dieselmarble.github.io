@@ -102,6 +102,42 @@
                 to achieve visual language navigation.</p>
             </td>
           </tr>
+
+
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='it_robot_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/it_robot_edited.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/it_robot.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfsuper_start() {
+                  document.getElementById('it_robot_image').style.opacity = "1";
+                }
+
+                function nerfsuper_stop() {
+                  document.getElementById('it_robot_image').style.opacity = "0";
+                }
+                nerfsuper_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://">
+                <papertitle> Data Center Robot: A mobile manipulator designed for IT service rooms.</papertitle>
+              </a>
+              <br>
+              <em>Huawei</em>, 2021 &nbsp
+              <br>
+							<!-- <a href="https://www.youtube.com/shorts/cL4Yg2M4e7g">video</a> / 
+							<a href="https://github.com/Dieselmarble/SmartMate">code</a>  -->
+              <!-- <a href="https://arxiv.org/abs/2203.01913">arXiv</a> /  -->
+              <p></p>
+              <p>This project designs a mobile manipulator for IT room manitance.</p>
+            </td>
+          </tr>
 					
           <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"> <!-- bgcolor="#ffffd0" -->
             <td style="padding:20px;width:25%;vertical-align:middle">

@@ -53,19 +53,21 @@
             </td>
           </tr>
 
-        <!-- </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        </tbody></table>
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-		          <font size="3" color="red">I am looking for Ph.D opportunities in robotics. Feel free to contact me!</font>
+		        <font size="3" color="red">I am looking for Ph.D opportunities in robotics. Feel free to contact me!</font>
             </td>
-          </tr>
-        </tbody></table> -->
+          </tr> -->
+        <!-- </tbody></table> -->
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>          
           <heading>Research and Projects</heading>
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+          <tr onmouseout="domestic_stop()" onmouseover="domestic_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+             
               <div class="one">
                 <div class="two" id='domestic_robot_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/light_160.mp4" type="video/mp4">
@@ -73,15 +75,16 @@
                 </video></div>
                 <img src='images/domestic_robot.jpg' width="160">
               </div>
+
               <script type="text/javascript">
-                function nerfsuper_start() {
+                function domestic_start() {
                   document.getElementById('domestic_robot_image').style.opacity = "1";
                 }
 
-                function nerfsuper_stop() {
+                function domestic_stop() {
                   document.getElementById('domestic_robot_image').style.opacity = "0";
                 }
-                nerfsuper_stop()
+                domestic_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -104,8 +107,9 @@
           </tr>
 
 
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+          <tr onmouseout="it_stop()" onmouseover="it_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
+
               <div class="one">
                 <div class="two" id='it_robot_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/it_robot_edited.mp4" type="video/mp4">
@@ -113,19 +117,20 @@
                 </video></div>
                 <img src='images/it_robot.jpg' width="160">
               </div>
+
               <script type="text/javascript">
-                function nerfsuper_start() {
+                function it_start() {
                   document.getElementById('it_robot_image').style.opacity = "1";
                 }
 
-                function nerfsuper_stop() {
+                function it_stop() {
                   document.getElementById('it_robot_image').style.opacity = "0";
                 }
-                nerfsuper_stop()
+                it_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="https://">
+							<!-- <a href="https://"> -->
                 <papertitle> Data Center Robot: A mobile manipulator designed for IDC maintenance.</papertitle>
               </a>
               <br>
@@ -141,24 +146,24 @@
             </td>
           </tr>
 					
-          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"> <!-- bgcolor="#ffffd0" -->
+          <tr onmouseout="mono_stop()" onmouseover="mono_start()"> <!-- bgcolor="#ffffd0" -->
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='MonoNav_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/MonoNav_edit.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <img src='images/IBVS.png' width="160">
               </div>
               <script type="text/javascript">
-                function mip360_start() {
-                  document.getElementById('mip360_image').style.opacity = "1";
+                function mono_start() {
+                  document.getElementById('MonoNav_image').style.opacity = "1";
                 }
 
-                function mip360_stop() {
-                  document.getElementById('mip360_image').style.opacity = "0";
+                function mono_stop() {
+                  document.getElementById('MonoNav_image').style.opacity = "0";
                 }
-                mip360_stop()
+                mono_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -172,34 +177,34 @@
               <a href="https://github.com/Dieselmarble/MonoNav">code</a> 
               <p></p>
               <p>This side project aims at approaching camera-based real-world navigation using image based visual servoing (IBVS).
-		 I propose a novel image-based pose stabilization control approaches for holonomic mobile robots with a calibrated overhead 
-		 fixed camera. In the proposed approaches, only image position information of ArUco markers from an overhead camera is used 
-		 for controller design, while information from other sensors (such as wheel encoders) is not required. In addition, a floor 
-		 detection neural network is used to extract the planar walkable region of a unseen environments from a monocular camera after which a occupancy grid map 
-		 is generated. Path planning, trajectory interpolation and LQR control are applied under visual feedback. This trajectory servoing framework 
-     has better trajectory tracking performance than pose-based feedback that rely on SLAM.
+                  I propose a novel image-based pose stabilization control approaches for holonomic mobile robots with a calibrated overhead 
+                  fixed camera. In the proposed approaches, only image position information of ArUco markers from an overhead camera is used 
+                  for controller design, while information from other sensors (such as wheel encoders) is not required. In addition, a floor 
+                  detection neural network is used to extract the planar walkable region of a unseen environments from a monocular camera after which a occupancy grid map 
+                  is generated. Path planning, trajectory interpolation and LQR control are applied under visual feedback. This trajectory servoing framework 
+                  has better trajectory tracking performance than pose-based feedback that rely on SLAM.
               </p>
             </td>
           </tr> 
 
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+          <tr onmouseout="pon_stop()" onmouseover="pon_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='PON'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='pon_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/PON.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <img src='images/PON_frame.jpeg' width="160">
               </div>
               <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('mip360_image').style.opacity = "1";
+                function pon_start() {
+                  document.getElementById('pon_image').style.opacity = "1";
                 }
 
-                function nerfsuper_stop() {
-                  document.getElementById('mip360_image').style.opacity = "0";
+                function pon_stop() {
+                  document.getElementById('pon_image').style.opacity = "0";
                 }
-                nerfsuper_stop()
+                pon_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -221,24 +226,24 @@
             </td>
           </tr>
 
-          <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+          <tr onmouseout="odn_stop()" onmouseover="odn_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='odn_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/odn.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <img src='images/fiber2.jpg' width="160">
               </div>
               <script type="text/javascript">
-                function refnerf_start() {
-                  document.getElementById('refnerf_image').style.opacity = "1";
+                function odn_start() {
+                  document.getElementById('odn_image').style.opacity = "1";
                 }
 
-                function refnerf_stop() {
-                  document.getElementById('refnerf_image').style.opacity = "0";
+                function odn_stop() {
+                  document.getElementById('odn_image').style.opacity = "0";
                 }
-                refnerf_stop()
+                odn_stop()
               </script>
             </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
@@ -260,24 +265,24 @@
               </td>
             </tr>
 
-          <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
+          <tr onmouseout="motor_stop()" onmouseover="motor_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='motor_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/motor.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <img src='images/linear_motor.JPG' width="160">
               </div>
               <script type="text/javascript">
-                function rawnerf_start() {
-                  document.getElementById('rawnerf_image').style.opacity = "1";
+                function motor_start() {
+                  document.getElementById('motor_image').style.opacity = "1";
                 }
 
-                function rawnerf_stop() {
-                  document.getElementById('rawnerf_image').style.opacity = "0";
+                function motor_stop() {
+                  document.getElementById('motor_image').style.opacity = "0";
                 }
-                rawnerf_stop()
+                motor_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -301,24 +306,24 @@
             </td>
           </tr> 
 
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+          <tr onmouseout="hand_stop()" onmouseover="hand_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='hand_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/cyber_glover.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
                 <img src='images/dmt_hand.jpg' width="160">
               </div>
               <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('mip360_image').style.opacity = "1";
+                function hand_start() {
+                  document.getElementById('hand_image').style.opacity = "1";
                 }
 
-                function nerfsuper_stop() {
-                  document.getElementById('mip360_image').style.opacity = "0";
+                function hand_stop() {
+                  document.getElementById('hand_image').style.opacity = "0";
                 }
-                nerfsuper_stop()
+                hand_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">

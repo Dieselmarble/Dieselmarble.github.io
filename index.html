@@ -186,11 +186,69 @@
             </td>
             <td width="75%" valign="middle">
               <a href="projects.html">Projects Before 2023</a>
-              <br>
+              <br><br>
               A collection of my earlier research projects and coursework from my undergraduate and early career studies.
             </td>
           </tr>
         </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Awards</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/zhuhai2024/award1.JPG" alt="Award Certificate" width="160" style="border-radius: 8px;">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <strong>珠海国际灵巧操作挑战赛-赛道三（机器人杂乱线缆整理插拔任务）-第一名</strong>, 2024
+              <br>
+              <em>Zhuhai International Dexterous Manipulation Challenge - Track 3 (Robot Messy Cable Management and Plug-in Task) - 1st Place</em>
+              <br><br>
+              <a href="https://www.dh-robotics.com/8947.html" target="_blank" rel="noopener noreferrer">News Report</a>
+              &nbsp;/&nbsp;
+              <a href="javascript:void(0)" onclick="showAwardGallery()">View Gallery</a>
+              <p style="margin-top:10px;">
+                Led by Prof. Jia Pan at HKU, our Omni-Mani team achieved first place in the deformable object manipulation challenge, demonstrating advanced robotics capabilities in cable management tasks.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Award Gallery Modal (initially hidden) -->
+        <div id="awardGallery" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000;">
+          <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:20px; border-radius:10px; max-width:90%; max-height:90%; overflow:auto;">
+            <div style="text-align:right; margin-bottom:10px;">
+              <button onclick="closeAwardGallery()" style="background:#f44336; color:white; border:none; padding:5px 10px; border-radius:3px; cursor:pointer;">✕ Close</button>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px; text-align:center;">
+              <div><img src="images/zhuhai2024/award1.JPG" style="width:100%; border-radius:8px;"><br><small>Award Certificate 1</small></div>
+              <div><img src="images/zhuhai2024/award2.jpg" style="width:100%; border-radius:8px;"><br><small>Award Certificate 2</small></div>
+              <div><img src="images/zhuhai2024/news.png" style="width:100%; border-radius:8px;"><br><small>News Coverage</small></div>
+              <div><img src="images/zhuhai2024/team1.JPG" style="width:100%; border-radius:8px;"><br><small>Team Photo 1</small></div>
+              <div><img src="images/zhuhai2024/team2.JPG" style="width:100%; border-radius:8px;"><br><small>Team Photo 2</small></div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function showAwardGallery() {
+            document.getElementById('awardGallery').style.display = 'block';
+          }
+          function closeAwardGallery() {
+            document.getElementById('awardGallery').style.display = 'none';
+          }
+          // Close gallery when clicking outside
+          document.getElementById('awardGallery').onclick = function(event) {
+            if (event.target === this) {
+              closeAwardGallery();
+            }
+          }
+        </script>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>

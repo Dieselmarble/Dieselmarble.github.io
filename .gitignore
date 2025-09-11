@@ -1,0 +1,64 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Node & package managers (if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Builds & caches
+build/
+dist/
+.out/
+out/
+.tmp/
+.temp/
+.cache/
+.parcel-cache/
+.svelte-kit/
+.next/
+
+# Python (just in case)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Jekyll / GitHub Pages
+_site/
+.sass-cache/
+.jekyll-metadata
+
+# Swap/temporary files
+*.swp
+*.swo
+*.swm
+*~
+
+# OS thumbnails (Windows)
+Thumbs.db

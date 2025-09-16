@@ -120,9 +120,27 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr>
+          <tr onmouseout="unibidex_stop()" onmouseover="unibidex_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/unibidex_before.png" alt="UniBiDex Framework" width="160" style="border-radius: 8px;">
+              <div class="one">
+                <div class="two" id="unibidex_input">
+                  <img src="images/unibidex_before.png" width="160" style="border-radius: 8px;">
+                </div>
+                <div class="two" id="unibidex_animate" style="display: none;">
+                  <img src="images/unibidex_after.gif" width="160" style="border-radius: 8px;">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function unibidex_start() {
+                  document.getElementById('unibidex_animate').style.display = 'inline';
+                  document.getElementById('unibidex_input').style.display = 'none';
+                }
+                function unibidex_stop() {
+                  document.getElementById('unibidex_animate').style.display = 'none';
+                  document.getElementById('unibidex_input').style.display = 'inline';
+                }
+                unibidex_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>UniBiDex: A Unified Teleoperation Framework for Robotic Bimanual Dexterous Manipulation</papertitle>

@@ -300,12 +300,33 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/zhuhai2025/IMG_6912.JPG" alt="Zhuhai Challenge Championship 2025" width="160" style="border-radius: 8px;">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <strong>第二届珠海国际灵巧操作挑战赛-日常生活赛道（厨房人机协作场景）-第一名</strong>, 2025
+              <br>
+              <em>Championship Award (1st Place), 2nd Zhuhai International Dexterous Manipulation Challenge - Daily Life Track (Kitchen Human-Robot Collaboration Scenario)</em>
+              <br>
+              <em>Prize: RMB 500,000 + RMB 6 Million Investment</em>
+              <br><br>
+              <a href="https://www.cds.hku.hk/news/cdss-omni-mani-team-claims-championship-at-2nd-zhuhai-international-dexterous-manipulation-challenge/" target="_blank" rel="noopener noreferrer">News Report</a>
+              &nbsp;/&nbsp;
+              <a href="javascript:void(0)" onclick="showAward2025Gallery()">View Gallery</a>
+              <p style="margin-top:10px;">
+                As a key member of the Omni-Mani team led by Prof. Jia Pan (HKU), we secured the championship among 20 elite international teams. 
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/zhuhai2024/award1.JPG" alt="Award Certificate" width="160" style="border-radius: 8px;">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <strong>珠海国际灵巧操作挑战赛-赛道三（机器人杂乱线缆整理插拔任务）-第一名</strong>, 2024
               <br>
-              <em>Zhuhai International Dexterous Manipulation Challenge - Track 3 (Robot Messy Cable Management and Plug-in Task) - 1st Place</em>
+              <em>Championship Award (1st Place), Zhuhai International Dexterous Manipulation Challenge - Track 3 (Robot Messy Cable Management and Plug-in Task)</em>
               <br><br>
               <a href="https://www.dh-robotics.com/8947.html" target="_blank" rel="noopener noreferrer">News Report</a>
               &nbsp;/&nbsp;
@@ -316,6 +337,21 @@
             </td>
           </tr>
         </tbody></table>
+
+        <!-- Award 2025 Gallery Modal (initially hidden) -->
+        <div id="award2025Gallery" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000;">
+          <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:20px; border-radius:10px; max-width:90%; max-height:90%; overflow:auto;">
+            <div style="text-align:right; margin-bottom:10px;">
+              <button onclick="closeAward2025Gallery()" style="background:#f44336; color:white; border:none; padding:5px 10px; border-radius:3px; cursor:pointer;">✕ Close</button>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px; text-align:center;">
+              <div><img src="images/zhuhai2025/IMG_6912.JPG" style="width:100%; border-radius:8px;"><br><small>Team Photo 1</small></div>
+              <div><img src="images/zhuhai2025/DSCF2316-opq4075661779.jpg" style="width:100%; border-radius:8px;"><br><small>Team Photo 2</small></div>
+              <div><img src="images/zhuhai2025/DSCF2355-opq4075662752.jpg" style="width:100%; border-radius:8px;"><br><small>Team Photo 3</small></div>
+              <div><img src="images/zhuhai2025/DSCF2479-opq4075665810.jpg" style="width:100%; border-radius:8px;"><br><small>Team Photo 4</small></div>
+            </div>
+          </div>
+        </div>
 
         <!-- Award Gallery Modal (initially hidden) -->
         <div id="awardGallery" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000;">
@@ -334,6 +370,19 @@
         </div>
 
         <script>
+          function showAward2025Gallery() {
+            document.getElementById('award2025Gallery').style.display = 'block';
+          }
+          function closeAward2025Gallery() {
+            document.getElementById('award2025Gallery').style.display = 'none';
+          }
+          // Close 2025 gallery when clicking outside
+          document.getElementById('award2025Gallery').onclick = function(event) {
+            if (event.target === this) {
+              closeAward2025Gallery();
+            }
+          }
+
           function showAwardGallery() {
             document.getElementById('awardGallery').style.display = 'block';
           }

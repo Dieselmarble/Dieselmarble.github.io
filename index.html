@@ -84,7 +84,7 @@
               <p style="text-align:center">
                 <name>Li Zhongxuan</name>
               </p>
-              <p>I am currently pursuing a PhD in Robotics at the Department of Computer Science, The University of Hong Kong (HKU). In parallel, I am a visiting student at the Email Lab, Great Bay University. Prior to this, I completed an integrated MEng (with Bachelor's degree incorporated) in Electrical and Electronic Engineering at Imperial College London, where I was mentored by Prof. Petar Kormushev and Prof. Wei Dai.
+              <p>I am currently pursuing a PhD in Robotics at the Department of Computer Science, The University of Hong Kong (HKU). In parallel, I founded <a href="https://www.omnix-robot.com/">Omni-X Robotics</a>, a startup building teleoperation and data collection systems for robot learning. Prior to this, I completed an integrated MEng (with Bachelor's degree incorporated) in Electrical and Electronic Engineering at Imperial College London.
               </p>
               
               <p>In addition to my academic training, I have extensive industry experience. At HKU, I collaborate with <a href="https://www.transgp.hk/">TransGP</a> through the <a href="https://www.innohk.gov.hk/">InnoHK</a> initiative. Before starting my doctoral studies, I worked at <a href="https://www.huawei.com/en/">Huawei</a> on optical network optimization and planning, and earlier completed an internship at <a href="https://www.ocadogroup.com/osp/our-technology/">Ocado Technology</a> in the UK.
@@ -106,6 +106,29 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Startup</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <a href="https://www.omnix-robot.com/"><img src="images/omnix_logo.svg" alt="Omni-X Robotics" width="160"></a>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.omnix-robot.com/"><papertitle>Omni-X Robotics</papertitle></a>
+              <br>
+              <em>Founder</em>
+              <p>
+              Omni-X Robotics builds robot teleoperation master arms (OmniLink) and a data platform (OmniPipe), providing a one-stop toolchain from hardware to software for robot skill data collection and model training.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
                 I hold a broad interest in a variety of topics in robotics. In particular, I work on robotics task understanding/planning. 
@@ -116,6 +139,150 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="count_stop()" onmouseover="count_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="count_input">
+                  <img src="images/count_before.png" width="160" style="border-radius: 8px;">
+                </div>
+                <div class="two" id="count_animate" style="display: none;">
+                  <img src="images/count_after.gif" width="160" style="border-radius: 8px;">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function count_start() {
+                  document.getElementById('count_animate').style.display = 'inline';
+                  document.getElementById('count_input').style.display = 'none';
+                }
+                function count_stop() {
+                  document.getElementById('count_animate').style.display = 'none';
+                  document.getElementById('count_input').style.display = 'inline';
+                }
+                count_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Learning to Count Without Labels: Self-Supervised Skill Abstraction and Bayesian Counting for Garment Production Monitoring</papertitle>
+              <br>
+              <strong>Zhongxuan Li</strong>,
+              Yilin Wen,
+              Lei Yang,
+              Jia Pan<sup>&dagger;</sup>,
+              Peng Zhou<sup>&dagger;</sup>
+              <br>
+              <em>IEEE Transactions on Industrial Informatics (TII)</em>, 2026
+              <br>
+              <p></p>
+              <p>
+              We propose a self-supervised framework for video-based sewn piece counting that learns task representations and dynamics directly from unsegmented demonstrations, without manual action annotation. The framework learns a task-state manifold via self-supervised visual pretraining, discovers discrete skills through information-bottleneck-guided vector quantization, and performs hierarchical probabilistic inference for robust progress estimation and verified counting on real-world factory data.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="failaware_stop()" onmouseover="failaware_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="failaware_input">
+                  <img src="images/failaware_before.png" width="160" style="border-radius: 8px;">
+                </div>
+                <div class="two" id="failaware_animate" style="display: none;">
+                  <img src="images/failaware_after.gif" width="160" style="border-radius: 8px;">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function failaware_start() {
+                  document.getElementById('failaware_animate').style.display = 'inline';
+                  document.getElementById('failaware_input').style.display = 'none';
+                }
+                function failaware_stop() {
+                  document.getElementById('failaware_animate').style.display = 'none';
+                  document.getElementById('failaware_input').style.display = 'inline';
+                }
+                failaware_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Failure-Aware Bimanual Teleoperation via Conservative Value Guided Assistance</papertitle>
+              <br>
+              Peng Zhou,
+              <strong>Zhongxuan Li</strong>,
+              Jinsong Wu,
+              Jiaming Qi,
+              Jun Hu,
+              David Navarro-Alarcon,
+              Jia Pan,
+              Lihua Xie,
+              Shiyao Zhang,
+              Zeqing Zhang
+              <br>
+              <em>arXiv preprint</em>, 2026
+              <br>
+              <a href="https://arxiv.org/abs/2602.01092">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=XDTsvzEkDRE">video</a>
+              <p></p>
+              <p>
+              We present a failure-aware bimanual teleoperation framework that provides compliant haptic assistance while preserving continuous human authority. Learned purely from mixed successful and failed offline teleoperation data, a conservative success score modulates the assistance strength while a learned actor supplies the corrective direction, both rendered through a master-side joint-space impedance interface that steers the operator away from risky actions without overriding intent.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="worldmodel_stop()" onmouseover="worldmodel_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="worldmodel_input">
+                  <img src="images/worldmodel_before.png" width="160" style="border-radius: 8px;">
+                </div>
+                <div class="two" id="worldmodel_animate" style="display: none;">
+                  <img src="images/worldmodel_after.png" width="160" style="border-radius: 8px;">
+                </div>
+              </div>
+              <script type="text/javascript">
+                function worldmodel_start() {
+                  document.getElementById('worldmodel_animate').style.display = 'inline';
+                  document.getElementById('worldmodel_input').style.display = 'none';
+                }
+                function worldmodel_stop() {
+                  document.getElementById('worldmodel_animate').style.display = 'none';
+                  document.getElementById('worldmodel_input').style.display = 'inline';
+                }
+                worldmodel_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>World Models for Robotic Manipulation: A Survey</papertitle>
+              <br>
+              Fangyuan Wang*,
+              Ziyuan Wang*,
+              Guorui Pei,
+              Mengshi Zhang,
+              Canxi Liang,
+              Jun Hu,
+              <strong>Zhongxuan Li</strong>,
+              Jinsong Wu,
+              Ning Han,
+              Zeqing Zhang,
+              Jiaming Qi,
+              Hongmin Wu,
+              Shiyao Zhang,
+              Pai Zheng,
+              Jia Pan,
+              David Navarro-Alarcon,
+              Sichao Liu,
+              Peng Zhou
+              <br>
+              <em>SmartBot</em>, 2026
+              <br>
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053">paper</a>
+              /
+              <a href="https://arxiv.org/abs/2606.00113">arXiv</a>
+              <p></p>
+              <p>
+              We survey world models for robotic manipulation, operationally defining a world model as an action-conditioned predictive system. The literature is organized by what is predicted (five representation families), how prediction connects to action (integrated prediction&ndash;action models vs. explicit predictive planners), and when prediction is used across pretraining, post-training, and inference.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="unibidex_stop()" onmouseover="unibidex_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -158,46 +325,6 @@
               <p></p>
               <p>
               We present UniBiDex, a unified teleoperation framework for robotic bimanual dexterous manipulation that supports both VR-based and leader–follower input modalities. The framework integrates heterogeneous input devices into a shared control stack with consistent kinematic treatment and safety guarantees, employing null-space control to optimize bimanual configurations for smooth, collision-free motion.
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="sewing_stop()" onmouseover="sewing_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id="sewing_input">
-                  <img src="images/sewn_before.png" width="160" style="border-radius: 8px;">
-                </div>
-                <div class="two" id="sewing_animate" style="display: none;">
-                  <img src="images/sewn_after.gif" width="160" style="border-radius: 8px;">
-                </div>
-              </div>
-              <script type="text/javascript">
-                function sewing_start() {
-                  document.getElementById('sewing_animate').style.display = 'inline';
-                  document.getElementById('sewing_input').style.display = 'none';
-                }
-                function sewing_stop() {
-                  document.getElementById('sewing_animate').style.display = 'none';
-                  document.getElementById('sewing_input').style.display = 'inline';
-                }
-                sewing_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>A Hierarchical Framework for Counting Sewing Task Repetitions In Garment Manufacturing</papertitle>
-              <br>
-              <strong>Zhongxuan Li</strong>,
-              Yilin Wen,
-              Lei Yang,
-              Peng Zhou,
-              Jia Pan
-              <br>
-              <em>Under Review</em>, 2025
-              <br>
-              <p></p>
-              <p>
-              We propose a hierarchical framework that integrates low-level action detection with high-level task reasoning to enable real-time sewn piece counting from video streams in garment manufacturing. Our method enhances Vision Transformer backbones with global cross-backbone layers and temporal ensembling for improved action detection, while using particle filtering on directed acyclic task graphs for robust repetition estimation despite execution variability.
               </p>
             </td>
           </tr>
